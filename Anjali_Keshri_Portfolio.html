@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e0824">
+<meta name="description" content="Anjali Keshri, CSE (AI & ML) student at Heritage Institute of Technology, building AI-powered products, useful web experiences, and Java & Python solutions.">
+<meta property="og:title" content="Anjali Keshri | AI/ML Engineer in the Making">
+<meta property="og:description" content="Six projects, a 9.88 CGPA and a habit of shipping. Explore my work.">
+<title>Anjali Keshri | AI/ML Engineer in the Making</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0e0824;--ink2:#1a1240;--orc:#b980ff;--aqua:#4df0d6;--peach:#ffb48f;--mist:#ece8ff;--dim:#a79fcb;--line:rgba(185,128,255,.24);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--ink);color:var(--mist);font:400 1.05rem/1.65 Figtree,system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--aqua);outline-offset:3px;border-radius:6px}
+/* background, identical to portfolio one */
+.au{position:fixed;border-radius:50%;filter:blur(100px);opacity:.32;z-index:0;pointer-events:none;animation:dr 24s ease-in-out infinite alternate}
+.a1{width:46vw;height:46vw;left:-10vw;top:-8vw;background:#6d3bff}
+.a2{width:40vw;height:40vw;right:-8vw;top:20vh;background:#13b5a6;animation-delay:-8s}
+.a3{width:36vw;height:36vw;left:30vw;bottom:-14vw;background:#e0559c;animation-delay:-15s;opacity:.22}
+@keyframes dr{to{transform:translate(8vw,6vh) scale(1.18)}}
+#bg{position:fixed;inset:0;z-index:1;pointer-events:none;transition:opacity 1s}
+#cg{position:fixed;left:0;top:0;width:420px;height:420px;margin:-210px 0 0 -210px;z-index:1;pointer-events:none;background:radial-gradient(circle,rgba(77,240,214,.12),transparent 65%);opacity:0;transition:opacity .4s}
+#pb{position:fixed;left:0;top:0;height:3px;width:100%;transform:scaleX(0);transform-origin:0 50%;background:linear-gradient(90deg,var(--aqua),var(--orc),var(--peach));z-index:20}
+nav,main,footer{position:relative;z-index:2}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:calc(14px + env(safe-area-inset-top,0px)) 6vw 14px;background:rgba(14,8,36,.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(185,128,255,.12)}
+.logo{font:800 1.15rem Syne,sans-serif;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo b{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:linear-gradient(120deg,var(--aqua),var(--orc));color:#12082e;font-size:.95rem}
+.nl{display:flex;gap:6px;align-items:center}
+.nl a{text-decoration:none;font-size:.95rem;color:var(--dim);padding:6px 12px;border-radius:99px;transition:color .2s,background .2s}
+.nl a:hover,.nl a.on{color:var(--aqua)}
+.nl a.on{background:rgba(77,240,214,.1)}
+.nl .cta{border:1px solid rgba(77,240,214,.45);color:var(--aqua)}
+.mt{display:none;font:600 .95rem Figtree,sans-serif;color:var(--mist);background:rgba(26,18,64,.7);border:1px solid var(--line);border-radius:99px;padding:7px 16px;cursor:pointer}
+/* hero */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:120px 6vw 90px;position:relative;max-width:1240px;margin:0 auto}
+.txt{max-width:min(640px,52vw)}
+.avail{display:inline-flex;align-items:center;gap:10px;font-size:.92rem;color:var(--dim);border:1px solid var(--line);background:rgba(26,18,64,.6);border-radius:99px;padding:6px 16px;margin:0 0 22px}
+.avail i{width:9px;height:9px;border-radius:50%;background:var(--aqua);box-shadow:0 0 0 0 rgba(77,240,214,.6);animation:pl 2s infinite}
+@keyframes pl{to{box-shadow:0 0 0 12px transparent}}
+h1{font:700 clamp(2.8rem,6.6vw,5.9rem)/.98 Syne,sans-serif;letter-spacing:-.035em;margin:0 0 .35em;background:linear-gradient(100deg,var(--mist) 15%,var(--aqua) 42%,var(--orc) 60%,var(--mist) 85%);background-size:260% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 9s linear infinite}
+@keyframes sh{to{background-position:-260% 0}}
+.tag{font-size:clamp(1.02rem,1.5vw,1.2rem);color:var(--dim);max-width:34em;margin:0 0 16px}
+.role{font:600 1.1rem Syne,sans-serif;color:var(--aqua);margin:0 0 28px;min-height:1.7em}
+.caret{display:inline-block;width:2px;height:1.05em;background:var(--aqua);margin-left:3px;vertical-align:-.15em;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 24px;border-radius:99px;text-decoration:none;font-weight:600;font-size:1rem;border:1px solid var(--line);background:rgba(26,18,64,.6);color:var(--mist);cursor:pointer;font-family:inherit;transition:transform .2s,box-shadow .2s}
+.btn.p{background:linear-gradient(110deg,var(--aqua),var(--orc));color:#12082e;border:0}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(77,240,214,.25)}
+.note{margin-top:26px;color:var(--dim);font-size:.92rem}
+.hint{position:absolute;right:6vw;bottom:34px;font-size:.9rem;color:var(--dim);transition:opacity .6s}
+/* layout */
+section.s{padding:100px 6vw;max-width:1240px;margin:0 auto}
+.sh{display:grid;grid-template-columns:1.1fr .9fr;gap:6vw;align-items:end;margin-bottom:44px}
+.sh p{margin:0;color:var(--dim)}
+.ey{font-size:.95rem;color:var(--aqua);font-weight:600;margin:0 0 10px}
+h2{font:800 clamp(2rem,4.4vw,3.4rem)/1.05 Syne,sans-serif;letter-spacing:-.025em;margin:0}
+h3{font:700 1.3rem Syne,sans-serif;margin:0 0 6px;letter-spacing:-.01em}
+.card{position:relative;border:1px solid var(--line);border-radius:22px;background:rgba(26,18,64,.58);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);overflow:hidden;transition:transform .25s,border-color .25s}
+.card::before{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;background:radial-gradient(340px circle at var(--mx,50%) var(--my,0%),rgba(77,240,214,.14),transparent 60%);opacity:0;transition:opacity .3s}
+.card:hover{border-color:rgba(77,240,214,.5)}
+.card:hover::before{opacity:1}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:0 6vw;max-width:1240px;margin:0 auto}
+.stat{padding:24px;text-align:left}
+.stat strong{display:block;font:800 clamp(2rem,4vw,3rem)/1 Syne,sans-serif;background:linear-gradient(100deg,var(--aqua),var(--orc));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{color:var(--dim);font-size:.95rem}
+/* about */
+.ab{display:grid;grid-template-columns:1fr 1.1fr;gap:6vw}
+.ab .big{font:500 clamp(1.3rem,2.4vw,1.9rem)/1.4 Figtree,sans-serif;margin:0}
+.ab .big em{font-style:normal;color:var(--aqua)}
+.ab p{margin:0 0 16px;color:var(--dim)}
+.facts{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.facts span,.tags span{font-size:.85rem;border:1px solid var(--line);border-radius:99px;padding:3px 12px;color:var(--aqua)}
+/* projects */
+.flt{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.fb{font:600 .95rem Figtree,sans-serif;color:var(--dim);background:rgba(26,18,64,.6);border:1px solid var(--line);border-radius:99px;padding:8px 18px;cursor:pointer;transition:all .2s}
+.fb:hover{color:var(--mist)}
+.fb.on{background:linear-gradient(110deg,var(--aqua),var(--orc));color:#12082e;border-color:transparent}
+.pg{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.pj{display:flex;flex-direction:column}
+.pj.hid{display:none}
+.pj.ft{grid-column:1/-1;flex-direction:row}
+.pj.ft .vis{flex:1 1 42%;height:auto;min-height:300px;border-bottom:0;border-right:1px solid var(--line)}
+.pj.ft .bd{flex:1 1 58%}
+.vis{height:180px;position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:linear-gradient(160deg,rgba(185,128,255,.16),rgba(77,240,214,.05));flex:none}
+.bd{padding:22px 26px 26px;display:flex;flex-direction:column;flex:1}
+.meta{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:10px;font-size:.88rem;color:var(--dim)}
+.st{padding:2px 12px;border-radius:99px;background:rgba(77,240,214,.12);color:var(--aqua);font-weight:600}
+.st.b{background:rgba(255,180,143,.14);color:var(--peach)}
+.bd>p{margin:0 0 12px;color:var(--mist);font-size:1rem}
+.bd ul{margin:0 0 16px;padding-left:1.1em;color:var(--dim);font-size:.96rem}
+.bd li+li{margin-top:6px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}
+.lk{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto}
+.lk a{padding:8px 16px;border-radius:99px;font:600 .92rem Syne,sans-serif;text-decoration:none;border:1px solid rgba(77,240,214,.4);color:var(--aqua);background:rgba(77,240,214,.07);transition:background .2s,transform .2s}
+.lk a:hover{background:rgba(77,240,214,.16);transform:translateY(-2px)}
+.lk a.g{border-color:var(--line);color:var(--mist);background:transparent}
+/* mini visuals */
+.mw{position:absolute;inset:34px 8% auto;border:1px solid var(--line);border-radius:14px;background:rgba(14,8,36,.7);padding:14px 18px 22px}
+.mw>i{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--orc);margin-right:6px;opacity:.7}
+.mw small{display:block;color:var(--aqua);font-size:.8rem;margin:14px 0 4px}
+.mw h4{font:700 1.35rem/1.15 Syne,sans-serif;margin:0 0 16px}
+.ln{height:8px;border-radius:9px;background:rgba(255,255,255,.1);margin-top:9px}
+.ln.m{width:70%}.ln.s{width:40%}
+.mg{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:16px}
+.mg i{height:44px;border-radius:10px;background:linear-gradient(150deg,rgba(77,240,214,.3),rgba(185,128,255,.25))}
+.mp svg{position:absolute;inset:0;width:100%;height:100%}
+.rt{stroke-dasharray:6 7;animation:dsh 1.4s linear infinite}
+@keyframes dsh{to{stroke-dashoffset:-26}}
+.nx{background-image:radial-gradient(rgba(185,128,255,.35) 1px,transparent 1.5px);background-size:24px 24px}
+.blk{position:absolute;top:0;width:24px;height:24px;animation:fl 4.8s steps(6) infinite}
+.b1{left:48px;color:#4df0d6;box-shadow:24px 0 currentColor,48px 0 currentColor,48px -24px currentColor;background:currentColor}
+.b2{left:168px;color:#ffb48f;animation-delay:-2.4s;box-shadow:0 -24px currentColor,24px 0 currentColor,24px 24px currentColor;background:currentColor}
+.b3{left:240px;color:#b980ff;animation-delay:-1.1s;box-shadow:24px 0 currentColor,0 24px currentColor,24px 24px currentColor;background:currentColor}
+@keyframes fl{from{transform:translateY(-70px)}to{transform:translateY(190px)}}
+.qz{padding:18px 26px}
+.qt{height:5px;border-radius:9px;background:linear-gradient(90deg,var(--aqua),var(--orc));animation:tm 4s linear infinite;margin-bottom:12px}
+@keyframes tm{from{width:100%}to{width:0}}
+.op{height:22px;border-radius:8px;border:1px solid var(--line);margin-top:7px}
+.op.c{animation:ok 4s infinite}
+@keyframes ok{0%,62%{background:transparent;border-color:var(--line)}72%,100%{background:rgba(77,240,214,.35);border-color:var(--aqua)}}
+.ty{padding:34px 24px;font:500 1.05rem/1.5 ui-monospace,Menlo,monospace}
+.wp{position:absolute;right:16px;bottom:12px;font:700 .9rem Syne,sans-serif;color:var(--peach)}
+.cd{padding:20px 24px;font:500 .9rem/1.6 ui-monospace,Menlo,monospace;color:var(--dim);white-space:pre}
+.cd b{color:var(--orc);font-weight:500}.cd em{font-style:normal;color:var(--aqua)}
+/* skills */
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.sk .card{padding:24px 26px}
+.sk p{margin:14px 0 0;color:var(--dim);font-size:.93rem}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chips span{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:99px;border:1px solid var(--line);background:rgba(26,18,64,.6);font:600 .92rem Syne,sans-serif}
+.chips span::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c);box-shadow:0 0 10px var(--c)}
+.sn{color:var(--dim);font-size:.9rem;margin:20px 0 0}
+/* journey */
+.jn{display:grid;grid-template-columns:1fr 1fr;gap:6vw}
+.jn .ey{margin-bottom:18px}
+.edu{padding:20px 24px;margin-bottom:16px}
+.edu strong{display:block;font:800 1.9rem Syne,sans-serif;background:linear-gradient(100deg,var(--peach),var(--orc));-webkit-background-clip:text;background-clip:text;color:transparent}
+.edu span{display:block;font-weight:600}.edu small{color:var(--dim);font-size:.9rem}
+.tl{position:relative;padding-left:36px;--f:0}
+.tl::before,.tl::after{content:"";position:absolute;left:7px;top:6px;width:2px}
+.tl::before{bottom:6px;background:var(--line)}
+.tl::after{height:calc((100% - 12px)*var(--f));background:linear-gradient(var(--aqua),var(--orc))}
+.it{position:relative;padding-bottom:30px}
+.it:last-child{padding-bottom:0}
+.it::before{content:"";position:absolute;left:-36px;top:7px;width:16px;height:16px;border-radius:50%;background:var(--ink);border:2px solid var(--orc);transition:all .4s}
+.it.on::before{background:var(--aqua);border-color:var(--aqua);box-shadow:0 0 18px var(--aqua)}
+.it small{color:var(--aqua);font-weight:600;font-size:.9rem}
+.it p{margin:2px 0 0;color:var(--dim);font-size:.96rem}
+/* contact */
+.cp{padding:clamp(32px,6vw,72px);text-align:center}
+.cp h2{margin:0 auto 18px;max-width:14em}
+.cp>p:not(.ey){max-width:36em;margin:0 auto 32px;color:var(--dim)}
+.cp .btns{justify-content:center}
+.mail{display:inline-block;font:800 clamp(1.2rem,3.6vw,2.4rem)/1.2 Syne,sans-serif;text-decoration:none;background:linear-gradient(100deg,var(--aqua),var(--orc),var(--peach));-webkit-background-clip:text;background-clip:text;color:transparent;border-bottom:2px solid var(--line);padding-bottom:4px;margin-bottom:30px;word-break:break-all}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;max-width:1240px;margin:0 auto;color:var(--dim);font-size:.9rem;padding:0 6vw 40px}
+footer div{display:flex;gap:18px}footer a{text-decoration:none}footer a:hover{color:var(--aqua)}
+#ts{position:fixed;left:50%;bottom:calc(28px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);opacity:0;background:var(--aqua);color:#12082e;padding:10px 20px;border-radius:99px;font-weight:600;transition:all .3s;z-index:30;pointer-events:none}
+#ts.on{opacity:1;transform:translate(-50%,0)}
+@media(max-width:900px){.sh,.ab,.jn{grid-template-columns:1fr;gap:20px}.pg{grid-template-columns:1fr}.pj.ft{flex-direction:column}.pj.ft .vis{min-height:260px;border-right:0;border-bottom:1px solid var(--line)}.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.mt{display:block}.nl{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;padding:14px 6vw 20px;background:rgba(14,8,36,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nl.open{display:flex}.hero{justify-content:flex-end;padding-bottom:70px}.txt{max-width:none}.hint{display:none}section.s{padding:72px 6vw}.logo span{display:none}}
+@media(hover:none){#cg{display:none}}
+@media(prefers-reduced-motion:reduce){.au,h1,.blk,.qt,.op.c,.caret,.rt,.avail i{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="pb"></div>
+<div class="au a1" aria-hidden="true"></div><div class="au a2" aria-hidden="true"></div><div class="au a3" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas><div id="cg" aria-hidden="true"></div>
+
+<nav>
+<a class="logo" href="#top" aria-label="Anjali Keshri, back to top"><b>AK</b><span>Anjali Keshri</span></a>
+<button class="mt" id="mt" aria-expanded="false" aria-controls="nl">Menu</button>
+<div class="nl" id="nl"><a href="#about">About</a><a href="#work">Projects</a><a href="#skills">Skills</a><a href="#journey">Journey</a><a href="#contact" class="cta">Let’s talk ↗</a></div>
+</nav>
+
+<main id="top">
+<header class="hero">
+<div class="txt">
+<div class="avail"><i></i>CSE (AI &amp; ML), Heritage Institute of Technology</div>
+<h1>Where Logic Meets Interaction.</h1>
+<p class="tag">I’m Anjali Keshri, a second-year Computer Science &amp; Engineering (AI &amp; ML) student at Heritage Institute of Technology, Kolkata, building web applications and exploring AI-driven solutions.</p>
+<p class="role"><span id="rt">Python &amp; AI-powered applications</span><i class="caret"></i></p>
+<div class="btns"><a class="btn p" href="#work">Explore my work ↘</a><a class="btn" href="Anjali_Keshri_Resume.pdf" download>Download resume ↓</a></div>
+<p class="note">Kolkata, India. Open to internships and collaborations.</p>
+</div>
+<div class="hint" id="hint">Move your cursor through the letters</div>
+</header>
+
+<div class="stats" aria-label="Highlights">
+<div class="card stat"><strong data-count="9.88" data-d="2">9.88</strong><span>HITK CGPA out of 10</span></div>
+<div class="card stat"><strong data-count="6">6</strong><span>Projects and engineering work</span></div>
+<div class="card stat"><strong data-count="2">2</strong><span>Competition recognitions</span></div>
+<div class="card stat"><strong data-count="2029">2029</strong><span>Expected graduation</span></div>
+</div>
+
+<section class="s" id="about">
+<div class="sh"><div><p class="ey">A little about me</p><h2>Engineer by learning. Builder by instinct.</h2></div><p>I enjoy turning a rough idea into something people can actually use, then improving it through feedback, iteration and curiosity.</p></div>
+<div class="ab">
+<p class="big">I care about the details behind the interface: the <em>logic, data and decisions</em> that make a product useful.</p>
+<div>
+<p>I’m a second-year B.Tech student in Computer Science &amp; Engineering (Artificial Intelligence and Machine Learning) at Heritage Institute of Technology, Kolkata. I have hands-on experience developing and deploying full-stack web applications, and I’m interested in Data Analytics, Machine Learning and AI-driven application development.</p>
+<p>My work includes browser-based games, an interactive quiz application, a typing-speed trainer, SafeWalk and a Java LeetCode solutions repository. I’m also developing SkillPath Navigator, an AI-powered placement-preparation platform.</p>
+<p>I enjoy combining programming, analytical thinking and problem-solving to create useful technology solutions. I’m eager to keep strengthening my engineering foundations while contributing to meaningful projects.</p>
+<div class="facts"><span>B.Tech 2025 to 2029</span><span>Kolkata, India</span><span>AI &amp; ML</span><span>Software development</span></div>
+</div></div>
+</section>
+
+<section class="s" id="work">
+<div class="sh"><div><p class="ey">Selected work</p><h2>Projects with a purpose.</h2></div><p>A mix of product thinking, interactive development and problem-solving. Open a live build or inspect the source to explore further.</p></div>
+<div class="flt" role="group" aria-label="Filter projects"><button class="fb on" data-f="all" aria-pressed="true">All work</button><button class="fb" data-f="ai" aria-pressed="false">AI &amp; Python</button><button class="fb" data-f="web" aria-pressed="false">Web experiences</button><button class="fb" data-f="problem" aria-pressed="false">Problem solving</button></div>
+<div class="pg">
+
+<article class="card pj ft" data-c="ai">
+<div class="vis"><div class="mw"><i></i><i></i><i></i><small>SkillPath, your next step</small><h4>Your placement journey, made personal.</h4><div class="ln"></div><div class="ln m"></div><div class="mg"><i></i><i></i><i></i></div></div></div>
+<div class="bd"><div class="meta"><span class="st b">In development</span>Flagship · AI full-stack platform</div>
+<h3>SkillPath Navigator</h3>
+<p>An AI-powered placement-preparation platform in development, designed to help college students prepare for target roles through personalized learning paths, practice and interview preparation.</p>
+<ul><li>Planned modules: resume analysis, personalized roadmaps, mock tests, AI assistance and interview preparation.</li><li>Selected architecture: Python FastAPI backend, PostgreSQL with SQLAlchemy ORM and JWT authentication.</li><li>Gemini integration is kept behind an abstraction so the AI provider can be changed as the project evolves.</li></ul>
+<div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>JWT</span><span>Generative AI</span></div>
+<div class="lk"><a href="mailto:anjalike16@gmail.com?subject=SkillPath%20Navigator%20demo">Discuss the project ↗</a></div></div>
+</article>
+
+<article class="card pj" data-c="ai">
+<div class="vis mp" aria-hidden="true"><svg viewBox="0 0 400 180" preserveAspectRatio="xMidYMid slice"><path d="M40 140 L360 40" stroke="#a79fcb" stroke-width="2" fill="none" stroke-dasharray="3 6" opacity=".6"/><path class="rt" d="M40 140 C100 150 120 70 200 90 S300 130 360 40" stroke="#4df0d6" stroke-width="3" fill="none"/><circle cx="40" cy="140" r="8" fill="#b980ff"/><circle cx="360" cy="40" r="8" fill="#ffb48f"/></svg></div>
+<div class="bd"><div class="meta"><span class="st">Repository available</span>Python · Mapping</div>
+<h3>SafeWalk</h3>
+<p>A pedestrian-safety navigation application that scores real streets using OpenStreetMap context such as lighting, activity and open shops, then compares safer and faster walking routes.</p>
+<ul><li>Explores safest-versus-fastest routing with time-of-day and route-priority controls.</li><li>README-documented features include nearby safe spots, crowd reports with verification and a safety timeline.</li><li>Includes safety workflows such as share-my-walk, SOS and Guardian safe-arrival alerts.</li></ul>
+<div class="tags"><span>Python</span><span>Flask</span><span>OpenStreetMap</span><span>HTML/CSS/JS</span><span>Mapping</span></div>
+<div class="lk"><a href="https://github.com/anjalikeshri26/SafeWalk" target="_blank" rel="noopener noreferrer">Source code ↗</a><a class="g" href="https://github.com/anjalikeshri26/SafeWalk#readme" target="_blank" rel="noopener noreferrer">Project details ↗</a></div></div>
+</article>
+
+<article class="card pj" data-c="web">
+<div class="vis nx" aria-hidden="true"><i class="blk b1"></i><i class="blk b2"></i><i class="blk b3"></i></div>
+<div class="bd"><div class="meta"><span class="st">Live project</span>Interactive web application</div>
+<h3>Nexus-Gaming</h3>
+<p>A browser-based gaming hub bringing classic mini-games together in one interactive experience.</p>
+<ul><li>Five playable games: Snake, Tetris, Pong, Minesweeper and Slide Puzzle.</li><li>Includes score tracking, responsive layouts, animations and a gaming-inspired interface.</li></ul>
+<div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vercel</span></div>
+<div class="lk"><a href="https://nexus-gaming-puce.vercel.app" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a class="g" href="https://github.com/anjalikeshri26/Nexus-Gaming" target="_blank" rel="noopener noreferrer">Source code ↗</a></div></div>
+</article>
+
+<article class="card pj" data-c="web">
+<div class="vis qz" aria-hidden="true"><div class="qt"></div><div class="op"></div><div class="op"></div><div class="op c"></div><div class="op"></div></div>
+<div class="bd"><div class="meta"><span class="st">Live project</span>Interactive web application</div>
+<h3>QuizBlitz</h3>
+<p>An interactive quiz application focused on a clear assessment flow and immediate feedback.</p>
+<ul><li>Dynamic quiz flow with answer validation and instant score calculation.</li><li>Designed to make short assessments engaging and easy to navigate.</li></ul>
+<div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vercel</span></div>
+<div class="lk"><a href="https://quiz-blitz-sigma.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a class="g" href="https://github.com/anjalikeshri26/QuizBlitz" target="_blank" rel="noopener noreferrer">Source code ↗</a></div></div>
+</article>
+
+<article class="card pj" data-c="web">
+<div class="vis ty" aria-hidden="true"><span id="tt"></span><i class="caret"></i><span class="wp" id="wp">0 WPM</span></div>
+<div class="bd"><div class="meta"><span class="st">Live project</span>Browser utility</div>
+<h3>Typist</h3>
+<p>A typing-speed trainer that turns practice into a measurable, feedback-driven activity.</p>
+<ul><li>Tracks words per minute and typing accuracy in real time.</li><li>Provides a lightweight interface for users to benchmark their typing practice.</li></ul>
+<div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vercel</span></div>
+<div class="lk"><a href="https://typist-five.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a class="g" href="https://github.com/anjalikeshri26/Typist" target="_blank" rel="noopener noreferrer">Source code ↗</a></div></div>
+</article>
+
+<article class="card pj" data-c="problem">
+<div class="vis cd" aria-hidden="true"><b>class</b> Solution {
+  <b>public int</b> search(int[] nums) {
+    <em>int</em> left = 0, right = nums.length - 1;
+    <b>while</b> (left &lt;= right) {
+      <em>int</em> mid = left + (right - left) / 2;
+      ...
+    }
+  }
+}</div>
+<div class="bd"><div class="meta"><span class="st">Public repository</span>DSA · Java</div>
+<h3>LeetCode Solutions: Java</h3>
+<p>A topic-organized collection of coding-practice solutions documenting algorithmic learning and interview preparation.</p>
+<ul><li>Topics represented include arrays, strings, two pointers, recursion, bit manipulation and binary search.</li><li>Provides a browsable record of problem-solving practice in Java.</li></ul>
+<div class="tags"><span>Java</span><span>DSA</span><span>Algorithms</span><span>Problem solving</span></div>
+<div class="lk"><a href="https://github.com/anjalikeshri26/Leetcode-Solutions-Java" target="_blank" rel="noopener noreferrer">Explore repository ↗</a></div></div>
+</article>
+</div>
+</section>
+
+<section class="s" id="skills">
+<div class="sh"><div><p class="ey">Technical toolkit</p><h2>Tools I build with.</h2></div><p>A practical snapshot of technologies used across coursework and projects. I keep learning and expanding this toolkit.</p></div>
+<div class="sk">
+<div class="card"><h3>Programming languages</h3><div class="chips" style="--c:#4df0d6"><span>Python</span><span>Java</span><span>C</span><span>SQL</span></div><p>Programming foundations and problem-solving.</p></div>
+<div class="card"><h3>Data analysis</h3><div class="chips" style="--c:#ffb48f"><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span></div><p>Data manipulation, analysis and visualization tools.</p></div>
+<div class="card"><h3>AI &amp; machine learning</h3><div class="chips" style="--c:#b980ff"><span>Machine Learning</span><span>Prompt Engineering</span></div><p>Areas of interest and applied learning.</p></div>
+<div class="card"><h3>Database, web &amp; tools</h3><div class="chips" style="--c:#ff8fd0"><span>PostgreSQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React.js</span><span>Node.js</span><span>Git</span><span>GitHub</span></div><p>Web technologies, database fundamentals and version control.</p></div>
+</div>
+<p class="sn">Project-specific technologies also include Flask (SafeWalk) and FastAPI, SQLAlchemy and JWT (SkillPath Navigator architecture).</p>
+</section>
+
+<section class="s" id="journey">
+<div class="sh"><div><p class="ey">Journey so far</p><h2>Learning. Building. Showing up.</h2></div><p>Academic milestones and experiences that have shaped how I approach technology, teamwork and problem solving.</p></div>
+<div class="jn">
+<div><p class="ey">Education</p>
+<div class="card edu"><strong data-count="9.88" data-d="2">9.88</strong><span>Heritage Institute of Technology</span><small>B.Tech · CSE (AI &amp; ML) · 2025 to 2029 · CGPA out of 10</small></div>
+<div class="card edu"><strong data-count="91.4" data-d="1" data-s="%">91.4%</strong><span>CBSE · Class XII</span><small>Explore International School · 2025</small></div>
+<div class="card edu"><strong data-count="97" data-d="1" data-s="%">97.0%</strong><span>CISCE · Class X</span><small>Oxford High School · 2023</small></div></div>
+<div><p class="ey">Recognition</p>
+<div class="tl">
+<div class="it"><small>Dakshh ’26</small><h3>1st Runner-Up · Sci-Charades</h3><p>Recognized in an inter-college technical-fest competition.</p></div>
+<div class="it"><small>Srijan ’26</small><h3>Finalist · Ace the Case</h3><p>Reached the final round of a case-study competition focused on OpenAI and Anthropic.</p></div>
+<div class="it"><small>Ongoing</small><h3>Building beyond the classroom</h3><p>Developing projects, strengthening DSA fundamentals and exploring practical AI applications.</p></div>
+</div></div>
+</div>
+</section>
+
+<section class="s" id="contact">
+<div class="card cp">
+<p class="ey">Start a conversation</p>
+<h2>Have a good problem? Let’s build a solution.</h2>
+<p>I’m open to internship opportunities, collaborative projects and conversations about AI, software engineering and product development.</p>
+<a class="mail" href="mailto:anjalike16@gmail.com?subject=Let's%20connect">anjalike16@gmail.com</a>
+<div class="btns"><a class="btn p" href="mailto:anjalike16@gmail.com?subject=Let's%20connect">Email me ↗</a><button class="btn" id="cpy" type="button">Copy email</button><a class="btn" href="Anjali_Keshri_Resume.pdf" download>Download resume ↓</a><a class="btn" href="tel:+919836243935">Call ↗</a><a class="btn" href="https://www.linkedin.com/in/anjali-keshri-14g122014" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="btn" href="https://github.com/anjalikeshri26" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+</div>
+</section>
+</main>
+<footer><span>© <span id="yr"></span> Anjali Keshri. Designed with intention.</span><div><a href="#top">Back to top ↑</a><a href="mailto:anjalike16@gmail.com">Email</a><a href="https://github.com/anjalikeshri26" target="_blank" rel="noopener noreferrer">GitHub</a></div></footer>
+<div id="ts" role="status">Email copied</div>
+
+<script>
+(()=>{
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches,touch=matchMedia('(hover:none)').matches;
+/* background engine, same as portfolio one (AK sits right of the copy on wide screens) */
+const cv=$('#bg'),cx=cv.getContext('2d'),cg=$('#cg'),hint=$('#hint');
+let W,H,P=[],asm=true;const m={x:-999,y:-999};
+hint.textContent=touch?'Touch and drag through the letters':'Move your cursor through the letters';
+const mk=()=>({x:Math.random()*W,y:Math.random()*H,vx:0,vy:0,dx:(Math.random()-.5)*.4,dy:(Math.random()-.5)*.4,t:null,g:0});
+function build(){
+const d=Math.min(devicePixelRatio||1,2);W=innerWidth;H=innerHeight;cv.width=W*d;cv.height=H*d;cx.setTransform(d,0,0,d,0,0);
+const o=document.createElement('canvas');o.width=W;o.height=H;const c=o.getContext('2d'),sm=W<760;
+const fs=sm?Math.min(W*.66,300):Math.min(W*.34,H*.66);
+c.font='800 '+fs+'px Syne,Figtree,sans-serif';c.textAlign='center';c.textBaseline='middle';
+c.fillText('AK',sm?W/2:W*.40,sm?H*.27:H*.5);
+const a=c.getImageData(0,0,W,H).data,cap=sm?300:680;let s=5,T;
+do{T=[];for(let y=0;y<H;y+=s)for(let x=0;x<W;x+=s)if(a[(y*W+x)*4+3]>140)T.push([x,y]);s++}while(T.length>cap);
+const N=T.length+(sm?60:140);
+for(let i=0;i<N;i++){P[i]=P[i]||mk();P[i].t=T[i]||null}
+P.length=N}
+function frame(){
+cx.clearRect(0,0,W,H);const R=54,g=new Map();
+for(let i=0;i<P.length;i++){const p=P[i],on=p.t&&asm;
+if(on){p.vx+=(p.t[0]-p.x)*.017;p.vy+=(p.t[1]-p.y)*.017;p.vx*=.86;p.vy*=.86}
+else{const k=reduce?0:1;p.vx+=(p.dx*k-p.vx)*.03;p.vy+=(p.dy*k-p.vy)*.03}
+const ax=p.x-m.x,ay=p.y-m.y,dd=ax*ax+ay*ay;
+if(dd<16900&&dd>1){const d=Math.sqrt(dd),f=(1-d/130)*(on?3.2:1.2);p.vx+=ax/d*f;p.vy+=ay/d*f}
+p.x+=p.vx;p.y+=p.vy;
+if(!on){if(p.x<-20)p.x=W+20;if(p.x>W+20)p.x=-20;if(p.y<-20)p.y=H+20;if(p.y>H+20)p.y=-20}
+p.g*=.95;
+const k=((p.x/R+3)|0)*400+((p.y/R+3)|0);let b=g.get(k);if(!b)g.set(k,b=[]);b.push(i)}
+if(!reduce&&Math.random()<.35)P[(Math.random()*P.length)|0].g=1;
+cx.lineWidth=.7;
+for(const[k,arr]of g){const gx=(k/400)|0,gy=k%400;
+for(let ox=-1;ox<2;ox++)for(let oy=-1;oy<2;oy++){const o=g.get((gx+ox)*400+gy+oy);if(!o)continue;
+for(const i of arr)for(const j of o){if(j<=i)continue;const p=P[i],q=P[j],dx=p.x-q.x,dy=p.y-q.y,d2=dx*dx+dy*dy;
+if(d2<R*R){const al=(1-Math.sqrt(d2)/R)*.4,hot=p.g+q.g;
+cx.strokeStyle=hot>.5?'rgba(77,240,214,'+Math.min(.9,al+hot*.4)+')':'rgba(170,150,255,'+al+')';
+cx.beginPath();cx.moveTo(p.x,p.y);cx.lineTo(q.x,q.y);cx.stroke()}}}}
+for(const p of P){const h=170+100*(p.x/W);
+if(p.g>.25){cx.fillStyle='hsla('+h+',90%,70%,'+p.g*.25+')';cx.beginPath();cx.arc(p.x,p.y,9*p.g+3,0,6.3);cx.fill()}
+cx.fillStyle='hsl('+h+',90%,'+(66+p.g*24)+'%)';cx.beginPath();cx.arc(p.x,p.y,1.5+p.g*1.8,0,6.3);cx.fill()}
+requestAnimationFrame(frame)}
+build();frame();
+document.fonts&&document.fonts.load('800 100px Syne').then(build);
+let rz;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(build,200)});
+addEventListener('pointermove',e=>{m.x=e.clientX;m.y=e.clientY;cg.style.opacity=1;cg.style.transform='translate('+e.clientX+'px,'+e.clientY+'px)';hint.style.opacity=0});
+document.addEventListener('pointerleave',()=>{m.x=m.y=-999;cg.style.opacity=0});
+addEventListener('pointerup',()=>{if(touch)m.x=m.y=-999});
+/* scroll: progress, particle dimming, recognition timeline */
+const pb=$('#pb'),tl=$('.tl');
+function onS(){const y=scrollY,h=document.documentElement.scrollHeight-innerHeight;
+pb.style.transform='scaleX('+(h>0?y/h:0)+')';asm=y<innerHeight*.4;cv.style.opacity=asm?1:.5;if(y>40)hint.style.opacity=0;
+const r=tl.getBoundingClientRect();tl.style.setProperty('--f',Math.min(1,Math.max(0,(innerHeight*.6-r.top)/r.height)));
+$$('.it').forEach(e=>e.classList.toggle('on',e.getBoundingClientRect().top<innerHeight*.6))}
+addEventListener('scroll',onS,{passive:true});onS();
+/* nav: mobile menu + active section */
+const mt=$('#mt'),nl=$('#nl');
+mt.onclick=()=>{const o=nl.classList.toggle('open');mt.setAttribute('aria-expanded',o);mt.textContent=o?'Close':'Menu'};
+$$('#nl a').forEach(a=>a.addEventListener('click',()=>{nl.classList.remove('open');mt.setAttribute('aria-expanded',false);mt.textContent='Menu'}));
+const no=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)$$('#nl a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-35% 0px -55% 0px'});
+$$('main section[id]').forEach(s=>no.observe(s));
+/* counters */
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);
+const el=e.target,n=+el.dataset.count,d=+(el.dataset.d||0),sf=el.dataset.s||'',t0=performance.now();
+(function st(t){const k=reduce?1:Math.min(1,(t-t0)/1400),z=1-Math.pow(1-k,3);el.textContent=(n*z).toFixed(d)+sf;if(k<1)requestAnimationFrame(st)})(t0)}),{threshold:.7});
+$$('[data-count]').forEach(el=>co.observe(el));
+/* project filters */
+$$('.fb').forEach(b=>b.addEventListener('click',()=>{$$('.fb').forEach(x=>{x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b)});
+$$('.pj').forEach(c=>c.classList.toggle('hid',b.dataset.f!=='all'&&c.dataset.c!==b.dataset.f))}));
+/* card spotlight + gentle tilt */
+$$('.card').forEach(c=>{c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+c.style.setProperty('--mx',x+'px');c.style.setProperty('--my',y+'px');
+if(!touch&&!reduce&&c.classList.contains('pj')&&!c.classList.contains('ft'))c.style.transform='perspective(900px) rotateY('+((x/r.width-.5)*4)+'deg) rotateX('+((.5-y/r.height)*4)+'deg)'});
+c.addEventListener('pointerleave',()=>c.style.transform='')});
+/* rotating role + typing demo */
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const roles=['Python & AI-powered applications','Full-stack product development','Java & algorithmic problem solving','Interfaces with purpose'],rt=$('#rt');
+if(!reduce){let i=0;setInterval(()=>{i=(i+1)%roles.length;rt.animate([{opacity:0,transform:'translateY(5px)'},{opacity:1,transform:'none'}],{duration:350});rt.textContent=roles[i]},2600)}
+const tt=$('#tt'),wp=$('#wp'),tx=['the quick brown fox jumps over the lazy dog','python turns messy data into answers'];
+if(reduce)tt.textContent=tx[0];else(async()=>{for(let i=0;;i=(i+1)%tx.length){tt.textContent='';const t0=performance.now();
+for(const ch of tx[i]){tt.textContent+=ch;const mn=(performance.now()-t0)/6e4;wp.textContent=Math.round(tt.textContent.length/5/Math.max(mn,.004))+' WPM';await sleep(70+Math.random()*60)}await sleep(1500)}})();
+/* contact */
+$('#cpy').onclick=async()=>{try{await navigator.clipboard.writeText('anjalike16@gmail.com')}catch(e){}
+const t=$('#ts');t.classList.add('on');setTimeout(()=>t.classList.remove('on'),1800)};
+$('#yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
